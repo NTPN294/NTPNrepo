@@ -16,7 +16,7 @@ public class ContactApp {
         Contact x = contactList.getContactByName("Nick");
         System.out.println(x.getKanker());
 
-        // test
+        // testaaaaaa
 
     }
 

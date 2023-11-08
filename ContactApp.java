@@ -14,7 +14,7 @@ public class ContactApp {
         contactList.addContact(contact3);
 
         Contact x = contactList.getContactByName("Nick");
-        System.out.println(x.getPhone());
+        System.out.println(x.getPhone() + " " + x.getName());
 
         // testaaaaaa
 

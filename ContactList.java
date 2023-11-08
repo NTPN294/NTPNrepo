@@ -9,12 +9,12 @@ public class ContactList {
     }
 
     public void addContact(Contact contact) {
-        contacts.put(contact.getName().trim().toLowerCase(), contact);
+        contacts.put(contact.getName().toLowerCase(), contact);
     }
 
     public Contact getContactByName(String name) {
 
-        return contacts.get(name.trim().toLowerCase());
+        return contacts.get(name.toLowerCase());
 
     }
 

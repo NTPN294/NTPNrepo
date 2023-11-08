@@ -1,28 +1,20 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class ContactList {
 
-    private ArrayList<Contact> contacts;
+    private HashMap<String, Contact> contacts;
 
     public ContactList() {
-        this.contacts = new ArrayList<>();
+        this.contacts = new HashMap<>();
     }
 
     public void addContact(Contact contact) {
-        contacts.add(contact);
+        contacts.put(contact.getName().trim().toLowerCase(), contact);
     }
 
     public Contact getContactByName(String name) {
 
-        Contact contact = null;
-
-        for (Contact c : contacts) {
-            if (c.getName().equals(name)) {
-                contact = c;
-            }
-        }
-
-        return contact;
+        return contacts.get(name.trim().toLowerCase());
 
     }
 

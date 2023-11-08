@@ -2,18 +2,19 @@
 public class Contact {
 
     private final String naam;
-    private final String kanker;
+    private final String phone;
 
-    public Contact(String naam) {
+    public Contact(String naam, String phone) {
         this.naam = naam;
-        this.kanker = "aids";
+        this.phone = phone;
     }
 
     public String getName() {
         return naam;
     }
 
-    public String getKanker() {
-        return kanker;
+    public String getPhone() {
+        return phone;
     }
+
 }
